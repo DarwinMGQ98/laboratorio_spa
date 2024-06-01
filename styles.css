@@ -1,0 +1,541 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: #A3A656;
+    height: 70px; 
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 100%; 
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 70px;
+    margin: 0;
+    display: flex;
+    align-items: center; 
+    height: 100%;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px; 
+    font-family: 'Inter', sans-serif;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase; 
+}
+
+header nav ul li a:hover {
+    color: #FFFF00;
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-right .usuario {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.menu-right .usuario img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.menu-right .lenguaje {
+    display: flex;
+    align-items: center;
+}
+
+.menu-right .lenguaje span {
+    margin-right: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.menu-right .lenguaje img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.menu-right .lenguajeop img {
+    width: 30px;
+    height: 30px;
+}
+
+#hero {
+    position: relative;
+    text-align: left;
+    color: black;
+    background: url('images/main.png') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 70px); 
+    overflow: hidden;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    padding: 20px;
+    max-width: 800px; 
+}
+
+.hero-content h1 {
+    font-family: 'Romanesco', cursive;
+    font-size: 96px; 
+    color: black;
+    margin: 0 0 20px 0; 
+}
+
+.hero-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px; 
+    font-weight: 600; 
+    color: black;
+    margin: 10px 0;
+    line-height: 1.2;
+    max-width: 600px; 
+}
+
+#booking {
+    height: 100px; 
+    background-color: #F2F6F6; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#booking form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+#booking label {
+    font-size: 16px; 
+    font-weight: 600; 
+    margin-right: 10px;
+    color: #384001; 
+}
+
+#booking input {
+    padding: 10px;
+    border: 1px solid #ffffff; 
+    border-radius: 15px; 
+    font-size: 16px; 
+    background-color: #ffffff; 
+    color: #ffffff; 
+}
+
+#booking input::placeholder {
+    color: #9E9A9A;
+}
+
+#booking button {
+    padding: 10px 20px;
+    background-color: #1e2f7a;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#booking button:hover {
+    background-color: #384001;
+}
+
+.tarjetas-servicio {
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    margin: 100px auto; 
+    gap: 134px; 
+    max-width: 1600px; 
+    
+}
+
+.tarjeta-servicio {
+
+    text-align: center; 
+    
+}
+
+.tarjeta-servicio h3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #A3A656;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 32px;
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+    white-space: nowrap; 
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    
+}
+
+.tarjeta-servicio img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    border-radius: 0;
+}
+
+.tarjeta-servicio p {
+    font-size: 16px;
+    color: #000000;
+    text-align:left;
+    margin-top: 20px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.tarjeta-servicio .precio-reservar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+.precio-servicio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+}
+
+.boton-reservar {
+    background-color: #A3A656;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    cursor: pointer;
+    text-decoration: none; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600; 
+}
+
+.boton-reservar:hover {
+    background-color: #384001;
+}
+
+#beneficios {
+    background-color: #F2F6F6; 
+    padding: 40px 0; 
+    text-align: center;
+    height: 770px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+}
+
+#beneficios h2 {
+    font-size: 32px;
+    color: #384001;
+    margin-top: 0; 
+    margin-bottom: 40px; 
+}
+
+.tarjetas-beneficio {
+    display: flex;
+    justify-content: center;
+    gap: 70px; 
+    align-items: center;
+    flex-grow: 1;
+    margin-top: -20px; 
+}
+
+.tarjeta-beneficio {
+    background-color: transparent; 
+    border-radius: 15px;
+    width: 300px; 
+    padding: 20px;
+    text-align: center;
+    box-shadow: none; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.tarjeta-beneficio .icono {
+    width: 233px; 
+    height: 233px; 
+    border: 11px solid #384001; 
+    border-radius: 50%;
+    margin: 0 auto 5px auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.tarjeta-beneficio h3 {
+    font-size: 24px;
+    color: #000000;
+    margin: 5px 0;
+}
+
+.tarjeta-beneficio .boton-condiciones {
+    background-color: #A3A656;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 35px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tarjeta-beneficio .boton-condiciones:hover {
+    background-color: #384001; 
+}
+
+.tarjeta-beneficio ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 0; 
+    padding-left: 0;
+}
+
+.tarjeta-beneficio ul li {
+    color: #384001;
+    font-size: 16px;
+    margin-bottom: 5px; 
+    text-align: left; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.tarjeta-beneficio ul li::before {
+    content: "•"; 
+    color: #384001;
+    display: inline-block;
+    width: 1em;
+    margin-right: 5px; 
+}
+
+footer {
+    background-color: #384001;
+    padding: 20px 0;
+    color: #A3A656;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    margin-right: auto;
+}
+
+.footer-links a {
+    color: #A3A656;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-links a:hover {
+    color: #FFFF00;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.footer-social span {
+    color: #A3A656;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px; 
+    }
+
+    .hero-content p {
+        font-size: 20px; 
+    }
+
+    #booking label, #booking input, #booking button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tarjeta-servicio {
+        width: 100%; 
+        margin: 10px 0;
+        
+    }
+
+    .hero-content {
+        left: 5%;
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px; 
+    }
+
+    .hero-content p {
+        font-size: 24px; 
+    }
+
+    #booking form {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-content {
+        left: 5%;
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 24px;
+    }
+
+    #booking form {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 20px; 
+
+    #booking label, #booking input, #booking button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tarjeta-servicio {
+        width: 100%;
+        margin: 10px 0; 
+    }
+
+    .hero-content {
+        left: 5%;
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 24px;
+    }
+
+    #booking form {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px; 
+    }
+
+    .hero-content p {
+        font-size: 20px; 
+    }
+
+    #booking label, #booking input, #booking button {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .tarjeta-servicio h3 {
+        position: static;  
+        margin-top: 0;
+    }
+
+    .tarjeta-servicio img {
+        margin-top: 20px; 
+    }
+}
+}
